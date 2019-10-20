@@ -128,7 +128,7 @@ html,
 body {
   height: 100%;
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
 }
 body {
   background-color: #676d79;
@@ -153,4 +153,9 @@ body .middlecontent .middlebox img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   width: 100%;
+}
+body .bottomcontent {
+  display: flex;
+  padding: 4.5rem;
+  background-color: #f7f7f7;
 }
