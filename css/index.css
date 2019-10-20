@@ -136,6 +136,15 @@ body {
 body h2 {
   font-weight: bold;
 }
+body .topcontent {
+  display: flex;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  margin-top: 4.5rem;
+  padding: 4.5rem;
+  background-color: #f7f7f7;
+  border-radius: 1rem;
+}
 body .middlecontent {
   display: flex;
   justify-content: space-between;
