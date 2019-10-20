@@ -87,17 +87,21 @@ body {
 			}
 		}
 		.topright{
-			display: flex wrap;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			height: 20%;
 
+			div{
+				margin: 10px;
+				background-color: @buttonblue;
+				border-radius: .5rem;
+				padding: 1rem 4rem 1rem 4rem;
+			}
+			
 			.morebutton{
 				text-decoration: none;
 				color: white;
-				background-color: @buttonblue;
-				border-radius: .5rem;
-				padding-left: 2rem;
-				padding-right: 2rem;
-				padding-top: 1rem;
-				padding-bottom: 1rem;
 				font-size: 2rem;
 			}
 
@@ -134,18 +138,23 @@ body {
 		background-color: @elementbkg;
 
 		.bottomleftbox{
-			width: 40%;
+			
+			img{
+				width: 45%;
+				border-radius: .5rem;
+			}
 
 			.morebutton{
 				text-decoration: none;
 				color: white;
+				border-radius: .5rem;
+				font-size: 2rem;
+			}
+
+			.bottomleftbutton{
 				background-color: @buttonblue;
 				border-radius: .5rem;
-				padding-left: 2rem;
-				padding-right: 2rem;
-				padding-top: 1rem;
-				padding-bottom: 1rem;
-				font-size: 2rem;
+				padding: 1rem 4rem 1rem 4rem;
 			}
 		}
 	}

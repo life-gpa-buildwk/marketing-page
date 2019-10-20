@@ -155,17 +155,20 @@ body .topcontent .topleft #bannerp {
   font-size: 2.75rem;
 }
 body .topcontent .topright {
-  display: flex wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 20%;
+}
+body .topcontent .topright div {
+  margin: 10px;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  padding: 1rem 4rem 1rem 4rem;
 }
 body .topcontent .topright .morebutton {
   text-decoration: none;
   color: white;
-  background-color: dodgerblue;
-  border-radius: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   font-size: 2rem;
 }
 body .middlecontent {
@@ -191,17 +194,18 @@ body .bottomcontent {
   padding: 4.5rem;
   background-color: #f7f7f7;
 }
-body .bottomcontent .bottomleftbox {
-  width: 40%;
+body .bottomcontent .bottomleftbox img {
+  width: 45%;
+  border-radius: 0.5rem;
 }
 body .bottomcontent .bottomleftbox .morebutton {
   text-decoration: none;
   color: white;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+}
+body .bottomcontent .bottomleftbox .bottomleftbutton {
   background-color: dodgerblue;
   border-radius: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 2rem;
+  padding: 1rem 4rem 1rem 4rem;
 }
