@@ -131,7 +131,7 @@ body {
   width: 100%;
 }
 body {
-  background-color: #676d79;
+  background-color: #D3D3D3;
 }
 body h2 {
   font-weight: bold;
@@ -143,7 +143,30 @@ body .topcontent {
   margin-top: 4.5rem;
   padding: 4.5rem;
   background-color: #f7f7f7;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+}
+body .topcontent .topleft {
+  width: 59%;
+}
+body .topcontent .topleft #bannerh2 {
+  font-size: 3.5rem;
+}
+body .topcontent .topleft #bannerp {
+  font-size: 2.75rem;
+}
+body .topcontent .topright {
+  display: flex wrap;
+}
+body .topcontent .topright .morebutton {
+  text-decoration: none;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
 }
 body .middlecontent {
   display: flex;
@@ -167,4 +190,18 @@ body .bottomcontent {
   display: flex;
   padding: 4.5rem;
   background-color: #f7f7f7;
+}
+body .bottomcontent .bottomleftbox {
+  width: 40%;
+}
+body .bottomcontent .bottomleftbox .morebutton {
+  text-decoration: none;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
 }

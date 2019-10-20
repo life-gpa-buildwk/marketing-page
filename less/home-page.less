@@ -74,7 +74,34 @@ body {
 		margin-top: 4.5rem;
 		padding: 4.5rem;
 		background-color: @elementbkg;
-		border-radius: 1rem;
+		border-radius: .5rem;
+
+		.topleft{
+			width: 59%;
+
+			#bannerh2{
+				font-size: 3.5rem;
+			}
+			#bannerp{
+				font-size: 2.75rem;
+			}
+		}
+		.topright{
+			display: flex wrap;
+
+			.morebutton{
+				text-decoration: none;
+				color: white;
+				background-color: @buttonblue;
+				border-radius: .5rem;
+				padding-left: 2rem;
+				padding-right: 2rem;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				font-size: 2rem;
+			}
+
+		}
 	}
 
 	.middlecontent{
@@ -105,5 +132,21 @@ body {
 		display: flex;
 		padding: 4.5rem;
 		background-color: @elementbkg;
+
+		.bottomleftbox{
+			width: 40%;
+
+			.morebutton{
+				text-decoration: none;
+				color: white;
+				background-color: @buttonblue;
+				border-radius: .5rem;
+				padding-left: 2rem;
+				padding-right: 2rem;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				font-size: 2rem;
+			}
+		}
 	}
 }
