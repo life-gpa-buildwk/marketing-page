@@ -131,10 +131,45 @@ body {
   width: 100%;
 }
 body {
-  background-color: #676d79;
+  background-color: #D3D3D3;
 }
 body h2 {
   font-weight: bold;
+}
+body .topcontent {
+  display: flex;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  margin-top: 4.5rem;
+  padding: 4.5rem;
+  background-color: #f7f7f7;
+  border-radius: 0.5rem;
+}
+body .topcontent .topleft {
+  width: 59%;
+}
+body .topcontent .topleft #bannerh2 {
+  font-size: 3.5rem;
+}
+body .topcontent .topleft #bannerp {
+  font-size: 2.75rem;
+}
+body .topcontent .topright {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 20%;
+}
+body .topcontent .topright div {
+  margin: 10px;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  padding: 1rem 4rem 1rem 4rem;
+}
+body .topcontent .topright .morebutton {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
 }
 body .middlecontent {
   display: flex;
@@ -158,4 +193,19 @@ body .bottomcontent {
   display: flex;
   padding: 4.5rem;
   background-color: #f7f7f7;
+}
+body .bottomcontent .bottomleftbox img {
+  width: 45%;
+  border-radius: 0.5rem;
+}
+body .bottomcontent .bottomleftbox .morebutton {
+  text-decoration: none;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+}
+body .bottomcontent .bottomleftbox .bottomleftbutton {
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  padding: 1rem 4rem 1rem 4rem;
 }
