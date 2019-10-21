@@ -100,6 +100,7 @@ section {
 }
 body {
   line-height: 1;
+  background-image: repeating-linear-gradient("img/bg01.png");
 }
 ol,
 ul {
@@ -208,4 +209,39 @@ body .bottomcontent .bottomleftbox .bottomleftbutton {
   background-color: dodgerblue;
   border-radius: 0.5rem;
   padding: 1rem 4rem 1rem 4rem;
+}
+
+header {
+  padding: 4.5em 0 3em 0;
+  height: 160px;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4%;
+  padding: 0 2% 0 1.5%;
+  height: inherit;
+}
+
+header nav h1 {
+  background-color: rgb(255,224,205);
+  border-radius: 10px;
+  color: white;
+  font-size: 3rem;
+  padding: 2% 4%;
+  border-color: rgb(227,87,17);
+  border-style: solid;
+}
+
+.nav_links {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_links li {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
