@@ -216,7 +216,7 @@ header {
   height: 160px;
 }
 
-header nav{
+.header nav{
   display: flex;
   justify-content: space-between;
   margin: 0 4%;
@@ -224,7 +224,7 @@ header nav{
   height: inherit;
 }
 
-header nav h1 {
+.header nav h1 {
   background-color: rgb(255,224,205);
   border-radius: 10px;
   color: white;
