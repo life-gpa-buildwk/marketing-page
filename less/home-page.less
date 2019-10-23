@@ -61,6 +61,29 @@ html, body {
 
 body {
 
+	header {
+		padding: 4.5em 0 3em 0;
+		height: 160px;
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			margin: 0 4%;
+			padding: 0 2% 0 1.5%;
+			height: inherit;
+
+			h1 {
+				background-color: rgb(255,224,205);
+				border-radius: 10px;
+				color: white;
+				font-size: 3rem;
+				padding: 2% 4%;
+				border-color: rgb(227,87,17);
+				border-style: solid;
+			}
+		}
+	}
+
 	background-color: @mainbkg;
 
 	h2{
@@ -154,8 +177,26 @@ body {
 			.bottomleftbutton{
 				background-color: @buttonblue;
 				border-radius: .5rem;
-				padding: 1rem 4rem 1rem 4rem;
+				padding: 1rem 4rem 1rem 3rem;
+				width: 46%;
 			}
 		}
 	}
+	.nav_links {
+		display: flex;
+		width: 60%;
+		justify-content: space-between;
+		align-items: center;
+
+		li {
+			font-size: 1.5rem;
+			cursor: pointer;
+		}
+	}
+	.footer_container {
+        footer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
 }
