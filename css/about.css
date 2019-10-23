@@ -124,9 +124,23 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-  margin: 0 auto;
+body .middlecontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4.5rem;
+}
+body .middlecontent .middlebox {
+  background-color: gray;
+  border-radius: 1rem;
+  width: 30%;
+  margin-bottom: 3rem;
+}
+body .middlecontent .middlebox .middleboxtext {
+  padding: 1rem;
+}
+body .middlecontent .middlebox img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   width: 100%;
 }
