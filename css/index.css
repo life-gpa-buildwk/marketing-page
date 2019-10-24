@@ -167,6 +167,7 @@ body {
   padding: 4.5rem;
   background-color: #f7f7f7;
   border-radius: 0.5rem;
+  align-items: center;
 }
 * body .topcontent .topleft {
   width: 59%;
@@ -179,7 +180,6 @@ body {
 }
 * body .topcontent .topright {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   height: 20%;
 }
@@ -203,6 +203,7 @@ body {
   background-color: #f7f7f7;
   border-radius: 1rem;
   width: 30%;
+  box-shadow: 10px 10px 5px grey;
 }
 * body .middlecontent .middlebox .middleboxtext {
   padding: 1rem;
@@ -219,8 +220,9 @@ body {
   background-color: #f7f7f7;
 }
 * body .bottomcontent .bottomleftbox img {
-  width: 45%;
+  width: 40%;
   border-radius: 0.5rem;
+  margin: 0.5rem;
 }
 * body .bottomcontent .bottomleftbox .morebutton {
   text-decoration: none;
@@ -233,6 +235,7 @@ body {
   border-radius: 0.5rem;
   padding: 1rem 4rem 1rem 3rem;
   width: 46%;
+  margin: 0.5rem;
 }
 * body .nav_links {
   display: flex;
@@ -386,6 +389,7 @@ table {
   border-radius: 1rem;
   width: 30%;
   margin-bottom: 3rem;
+  box-shadow: 10px 10px 5px grey;
 }
 .middlecontent .middlebox .middleboxtext {
   padding: 1rem;
