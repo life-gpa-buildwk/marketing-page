@@ -131,7 +131,7 @@ body {
   width: 100%;
 }
 body {
-  background-color: #D3D3D3;
+  background-color: #DCDCDC;
 }
 body header {
   padding: 4.5em 0 3em 0;
@@ -208,6 +208,7 @@ body .middlecontent .middlebox img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   width: 100%;
+  height: 40vh;
 }
 body .bottomcontent {
   display: flex;
@@ -370,155 +371,63 @@ table {
 * {
   box-sizing: border-box;
 }
+.middlecontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4.5rem;
+}
+.middlecontent .middlebox {
+  background-color: #f7f7f7;
+  border-radius: 1rem;
+  width: 30%;
+  margin-bottom: 3rem;
+}
+.middlecontent .middlebox .middleboxtext {
+  padding: 1rem;
+}
+.middlecontent .middlebox img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+}
 html,
 body {
   height: 100%;
   margin: 0 auto;
   width: 100%;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+body header {
+  padding: 4.5em 0 3em 0;
+  height: 160px;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
-}
-body .middlecontent {
+body header nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 4.5rem;
+  margin: 0 4%;
+  padding: 0 2% 0 1.5%;
+  height: inherit;
 }
-body .middlecontent .middlebox {
-  background-color: #f7f7f7;
-  border-radius: 1rem;
-  width: 30%;
-  margin-bottom: 3rem;
+body header nav h1 {
+  background-color: #ffe0cd;
+  border-radius: 10px;
+  color: white;
+  font-size: 3rem;
+  padding: 2% 4%;
+  border-color: #e35711;
+  border-style: solid;
 }
-body .middlecontent .middlebox .middleboxtext {
-  padding: 1rem;
+body .nav_links {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
 }
-body .middlecontent .middlebox img {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  width: 100%;
+body .nav_links li {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+body .footer_container footer {
+  display: flex;
+  justify-content: space-evenly;
 }
