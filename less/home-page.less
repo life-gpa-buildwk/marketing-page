@@ -59,6 +59,9 @@ html, body {
 	width: 100%;
 }
 
+*{
+	font-family: 'Open Sans', sans-serif;
+
 body {
 
 	header {
@@ -98,6 +101,7 @@ body {
 		padding: 4.5rem;
 		background-color: @elementbkg;
 		border-radius: .5rem;
+		align-items: center;
 
 		.topleft{
 			width: 59%;
@@ -111,9 +115,9 @@ body {
 		}
 		.topright{
 			display: flex;
-			justify-content: space-between;
 			flex-direction: column;
 			height: 20%;
+
 
 			div{
 				margin: 10px;
@@ -141,6 +145,7 @@ body {
 			background-color: @elementbkg;
 			border-radius: 1rem;
 			width: 30%;
+			box-shadow: 10px 10px 5px grey;
 
 			.middleboxtext{
 				padding: 1rem;
@@ -162,10 +167,13 @@ body {
 		background-color: @elementbkg;
 
 		.bottomleftbox{
+
+			
 			
 			img{
-				width: 45%;
+				width: 40%;
 				border-radius: .5rem;
+				margin: .5rem;
 			}
 
 			.morebutton{
@@ -180,6 +188,7 @@ body {
 				border-radius: .5rem;
 				padding: 1rem 4rem 1rem 3rem;
 				width: 46%;
+				margin: .5rem;
 			}
 		}
 	}
@@ -200,4 +209,5 @@ body {
             justify-content: space-evenly;
         }
     }
+}
 }

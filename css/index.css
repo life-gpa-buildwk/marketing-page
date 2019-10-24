@@ -130,21 +130,24 @@ body {
   margin: 0 auto;
   width: 100%;
 }
-body {
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+* body {
   background-color: #DCDCDC;
 }
-body header {
+* body header {
   padding: 4.5em 0 3em 0;
   height: 160px;
 }
-body header nav {
+* body header nav {
   display: flex;
   justify-content: space-between;
   margin: 0 4%;
   padding: 0 2% 0 1.5%;
   height: inherit;
 }
-body header nav h1 {
+* body header nav h1 {
   background-color: #ffe0cd;
   border-radius: 10px;
   color: white;
@@ -153,10 +156,10 @@ body header nav h1 {
   border-color: #e35711;
   border-style: solid;
 }
-body h2 {
+* body h2 {
   font-weight: bold;
 }
-body .topcontent {
+* body .topcontent {
   display: flex;
   margin-left: 4.5rem;
   margin-right: 4.5rem;
@@ -164,84 +167,87 @@ body .topcontent {
   padding: 4.5rem;
   background-color: #f7f7f7;
   border-radius: 0.5rem;
+  align-items: center;
 }
-body .topcontent .topleft {
+* body .topcontent .topleft {
   width: 59%;
 }
-body .topcontent .topleft #bannerh2 {
+* body .topcontent .topleft #bannerh2 {
   font-size: 3.5rem;
 }
-body .topcontent .topleft #bannerp {
+* body .topcontent .topleft #bannerp {
   font-size: 2.75rem;
 }
-body .topcontent .topright {
+* body .topcontent .topright {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   height: 20%;
 }
-body .topcontent .topright div {
+* body .topcontent .topright div {
   margin: 10px;
   background-color: dodgerblue;
   border-radius: 0.5rem;
   padding: 1rem 4rem 1rem 4rem;
 }
-body .topcontent .topright .morebutton {
+* body .topcontent .topright .morebutton {
   text-decoration: none;
   color: white;
   font-size: 2rem;
 }
-body .middlecontent {
+* body .middlecontent {
   display: flex;
   justify-content: space-between;
   padding: 4.5rem;
 }
-body .middlecontent .middlebox {
+* body .middlecontent .middlebox {
   background-color: #f7f7f7;
   border-radius: 1rem;
   width: 30%;
+  box-shadow: 10px 10px 5px grey;
 }
-body .middlecontent .middlebox .middleboxtext {
+* body .middlecontent .middlebox .middleboxtext {
   padding: 1rem;
 }
-body .middlecontent .middlebox img {
+* body .middlecontent .middlebox img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   width: 100%;
   height: 40vh;
 }
-body .bottomcontent {
+* body .bottomcontent {
   display: flex;
   padding: 4.5rem;
   background-color: #f7f7f7;
 }
-body .bottomcontent .bottomleftbox img {
-  width: 45%;
+* body .bottomcontent .bottomleftbox img {
+  width: 40%;
   border-radius: 0.5rem;
+  margin: 0.5rem;
 }
-body .bottomcontent .bottomleftbox .morebutton {
+* body .bottomcontent .bottomleftbox .morebutton {
   text-decoration: none;
   color: white;
   border-radius: 0.5rem;
   font-size: 2rem;
 }
-body .bottomcontent .bottomleftbox .bottomleftbutton {
+* body .bottomcontent .bottomleftbox .bottomleftbutton {
   background-color: dodgerblue;
   border-radius: 0.5rem;
   padding: 1rem 4rem 1rem 3rem;
   width: 46%;
+  margin: 0.5rem;
 }
-body .nav_links {
+* body .nav_links {
   display: flex;
   width: 60%;
   justify-content: space-between;
   align-items: center;
 }
-body .nav_links li {
+* body .nav_links li {
   font-size: 1.5rem;
   cursor: pointer;
 }
-body .footer_container footer {
+* body .footer_container footer {
   display: flex;
   justify-content: space-evenly;
 }
@@ -370,6 +376,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 .middlecontent {
   display: flex;
@@ -382,6 +389,7 @@ table {
   border-radius: 1rem;
   width: 30%;
   margin-bottom: 3rem;
+  box-shadow: 10px 10px 5px grey;
 }
 .middlecontent .middlebox .middleboxtext {
   padding: 1rem;
