@@ -185,7 +185,7 @@ body {
 }
 * body .topcontent .topright div {
   margin: 10px;
-  background-color: dodgerblue;
+  background-color: #e35800;
   border-radius: 0.5rem;
   padding: 1rem 4rem 1rem 4rem;
 }
@@ -231,7 +231,7 @@ body {
   font-size: 2rem;
 }
 * body .bottomcontent .bottomleftbox .bottomleftbutton {
-  background-color: dodgerblue;
+  background-color: #e35800;
   border-radius: 0.5rem;
   padding: 1rem 4rem 1rem 3rem;
   width: 46%;
@@ -250,6 +250,31 @@ body {
 * body .footer_container footer {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  * body .topcontent .topleft {
+    display: none;
+  }
+  * body .topcontent #bannerh2 {
+    text-align: center;
+  }
+  * body .topcontent #bannerp {
+    display: none;
+  }
+  * body .middlecontent {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  * body .middlecontent .middlebox {
+    width: 90%;
+  }
+  * body .middlecontent .middlebox .middleboxtext {
+    width: 90%;
+  }
+  * body .bottomcontent .bottomleftbox {
+    display: none;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -383,6 +408,7 @@ table {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 4.5rem;
+  width: 100%;
 }
 .middlecontent .middlebox {
   background-color: #f7f7f7;
@@ -438,4 +464,23 @@ body .nav_links li {
 body .footer_container footer {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  * body .topcontent #bannerh2 {
+    text-align: center;
+  }
+  * body .topcontent #bannerp {
+    display: none;
+  }
+  * body .middlecontent {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  * body .middlecontent .middlebox {
+    width: 90%;
+  }
+  * body .middlecontent .middlebox .middleboxtext {
+    width: 90%;
+  }
 }
