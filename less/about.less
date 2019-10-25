@@ -54,12 +54,12 @@ table {
     font-family: 'Open Sans', sans-serif;
 }
 
-
     .middlecontent{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 4.5rem;
+    width: 100%;
     
     
         .middlebox{
@@ -128,4 +128,39 @@ body {
             justify-content: space-evenly;
         }
     }
+}
+
+@media (max-width: 500px){
+*{
+    body{
+
+        .topcontent{
+
+            #bannerh2{
+                text-align: center;
+            }
+
+            #bannerp{
+                display: none;
+            }
+        }
+
+        .middlecontent{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            .middlebox{
+                width:90%;
+
+                img{
+                }
+
+                .middleboxtext{
+                    width: 90%
+                }
+            }
+        }
+    }
+}
 }

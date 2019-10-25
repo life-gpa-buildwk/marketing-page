@@ -121,7 +121,7 @@ body {
 
 			div{
 				margin: 10px;
-				background-color: @buttonblue;
+				background-color: @buttoncolor;
 				border-radius: .5rem;
 				padding: 1rem 4rem 1rem 4rem;
 			}
@@ -184,7 +184,7 @@ body {
 			}
 
 			.bottomleftbutton{
-				background-color: @buttonblue;
+				background-color: @buttoncolor;
 				border-radius: .5rem;
 				padding: 1rem 4rem 1rem 3rem;
 				width: 46%;
@@ -211,3 +211,49 @@ body {
     }
 }
 }
+
+@media (max-width: 500px){
+	*{
+		body{
+	
+			.topcontent{
+				
+				.topleft{
+					display: none;
+				}
+
+				#bannerh2{
+					text-align: center;
+				}
+	
+				#bannerp{
+					display: none;
+				}
+			}
+	
+			.middlecontent{
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+	
+				.middlebox{
+					width:90%;
+	
+					img{
+					}
+	
+					.middleboxtext{
+						width: 90%
+					}
+				}
+			}
+
+			.bottomcontent{
+				
+				.bottomleftbox{
+					display: none;
+				}
+			}
+		}
+	}
+	}
