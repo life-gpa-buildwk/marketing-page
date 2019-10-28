@@ -134,7 +134,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 body {
-  background-color: #DCDCDC;
+  background-color: #fffbf9;
 }
 body .header {
   padding: 4.5em 0 3em 0;
@@ -169,9 +169,10 @@ body .topcontent {
   margin-right: 4.5rem;
   margin-top: 4.5rem;
   padding: 4.5rem;
-  background-color: #f7f7f7;
+  background-color: #ffe0cc;
   border-radius: 0.5rem;
   align-items: center;
+  border: solid 1px #e35800;
 }
 body .topcontent .topleft {
   width: 59%;
@@ -189,7 +190,7 @@ body .topcontent .topright {
 }
 body .topcontent .topright div {
   margin: 10px;
-  background-color: dodgerblue;
+  background-color: #e35800;
   border-radius: 0.5rem;
   padding: 1rem 4rem 1rem 4rem;
 }
@@ -204,10 +205,10 @@ body .middlecontent {
   padding: 4.5rem;
 }
 body .middlecontent .middlebox {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   border-radius: 1rem;
   width: 30%;
-  box-shadow: 10px 10px 5px grey;
+  border: solid 1px #909090;
 }
 body .middlecontent .middlebox .middleboxtext {
   padding: 1rem;
@@ -221,7 +222,7 @@ body .middlecontent .middlebox img {
 body .bottomcontent {
   display: flex;
   padding: 4.5rem;
-  background-color: #f7f7f7;
+  background-color: #ffe0cc;
 }
 body .bottomcontent .bottomleftbox img {
   width: 40%;
@@ -235,7 +236,7 @@ body .bottomcontent .bottomleftbox .morebutton {
   font-size: 2rem;
 }
 body .bottomcontent .bottomleftbox .bottomleftbutton {
-  background-color: dodgerblue;
+  background-color: #e35800;
   border-radius: 0.5rem;
   padding: 1rem 4rem 1rem 3rem;
   width: 46%;
@@ -296,6 +297,31 @@ body .footer_container footer {
   }
   .body_container .middlecontent .middlebox {
     width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  * body .topcontent .topleft {
+    display: none;
+  }
+  * body .topcontent #bannerh2 {
+    text-align: center;
+  }
+  * body .topcontent #bannerp {
+    display: none;
+  }
+  * body .middlecontent {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  * body .middlecontent .middlebox {
+    width: 90%;
+  }
+  * body .middlecontent .middlebox .middleboxtext {
+    width: 90%;
+  }
+  * body .bottomcontent .bottomleftbox {
+    display: none;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -430,13 +456,14 @@ table {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 4.5rem;
+  width: 100%;
 }
 .middlecontent .middlebox {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   border-radius: 1rem;
   width: 30%;
   margin-bottom: 3rem;
-  box-shadow: 10px 10px 5px grey;
+  border: solid 1px #909090;
 }
 .middlecontent .middlebox .middleboxtext {
   padding: 1rem;
@@ -485,4 +512,23 @@ body .nav_links li {
 body .footer_container footer {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  * body .topcontent #bannerh2 {
+    text-align: center;
+  }
+  * body .topcontent #bannerp {
+    display: none;
+  }
+  * body .middlecontent {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  * body .middlecontent .middlebox {
+    width: 90%;
+  }
+  * body .middlecontent .middlebox .middleboxtext {
+    width: 90%;
+  }
 }

@@ -108,9 +108,10 @@ body {
 		margin-right: 4.5rem;
 		margin-top: 4.5rem;
 		padding: 4.5rem;
-		background-color: @elementbkg;
+		background-color: @panelbkg;
 		border-radius: .5rem;
 		align-items: center;
+		border: solid 1px @buttoncolor;
 
 		.topleft{
 			width: 59%;
@@ -130,7 +131,7 @@ body {
 
 			div{
 				margin: 10px;
-				background-color: @buttonblue;
+				background-color: @buttoncolor;
 				border-radius: .5rem;
 				padding: 1rem 4rem 1rem 4rem;
 			}
@@ -154,7 +155,7 @@ body {
 			background-color: @elementbkg;
 			border-radius: 1rem;
 			width: 30%;
-			box-shadow: 10px 10px 5px grey;
+			border: solid 1px #909090;
 
 			.middleboxtext{
 				padding: 1rem;
@@ -173,7 +174,7 @@ body {
 		
 		display: flex;
 		padding: 4.5rem;
-		background-color: @elementbkg;
+		background-color: @panelbkg;
 
 		.bottomleftbox{
 
@@ -193,7 +194,7 @@ body {
 			}
 
 			.bottomleftbutton{
-				background-color: @buttonblue;
+				background-color: @buttoncolor;
 				border-radius: .5rem;
 				padding: 1rem 4rem 1rem 3rem;
 				width: 46%;
@@ -272,3 +273,47 @@ body {
 		}
 	}
 }
+
+
+@media (max-width: 500px){
+	*{
+		body{
+	
+			.topcontent{
+				
+				.topleft{
+					display: none;
+				}
+
+				#bannerh2{
+					text-align: center;
+				}
+	
+				#bannerp{
+					display: none;
+				}
+			}
+	
+			.middlecontent{
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+	
+				.middlebox{
+					width:90%;
+	
+					.middleboxtext{
+						width: 90%
+					}
+				}
+			}
+
+			.bottomcontent{
+				
+				.bottomleftbox{
+					display: none;
+				}
+			}
+		}
+	}
+	}
