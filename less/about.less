@@ -58,8 +58,9 @@ table {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 4.5rem;
-    width: 100%;
+    padding: 1.5rem;
+    width: 85%;
+    margin: 0 auto;
     
     
         .middlebox{
@@ -113,13 +114,16 @@ body {
 
         .nav_links {
         display: flex;
-        width: 60%;
+        width: 64%;
         justify-content: space-between;
         align-items: center;
 
         li {
             font-size: 1.5rem;
             cursor: pointer;
+        }
+        .middle_link {
+            padding: 0 1rem;
         }
     }
     .footer_container {
@@ -130,37 +134,91 @@ body {
     }
 }
 
+@media (max-width: 800px) {
+	.body_container {
+		width: auto;
+		.header {
+			display: flex;
+			height: 18rem;
+			padding-bottom: 0;
+			.nav {
+				display: flex;
+				flex-direction: column;
+				height: auto;
+				width: 100%;
+				
+				h1 {
+					text-align: center;
+				}
+				.nav_links {
+					margin: auto;
+                    width: 85%;
+					
+					.middle_link {
+						border-left: black solid thin;
+						border-right: black solid thin;
+						padding: 0 1rem;
+					}
+				}
+			}
+		}
+		.topcontent {
+		margin-top: 0;
+
+			.topleft {
+				width: 100%;
+			}
+		}
+		.middlecontent {
+			display: flex;
+
+			.middlebox {
+				width: 45%;
+			}
+		}
+	}
+}
+
 @media (max-width: 500px){
 *{
     body{
-
-        .topcontent{
-
-            #bannerh2{
-                text-align: center;
-            }
-
-            #bannerp{
-                display: none;
-            }
-        }
-
-        .middlecontent{
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-
-            .middlebox{
-                width:90%;
-
-                img{
-                }
-
-                .middleboxtext{
-                    width: 90%
+        .body_container{
+            .header {
+                .nav {
+                    .nav_links {
+                        width: 95%;
+                    }
                 }
             }
-        }
-    }
+
+            .topcontent{
+
+                #bannerh2{
+                    text-align: center;
+                }
+
+                #bannerp{
+                    display: none;
+                }
+            }
+
+            .middlecontent{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+
+                .middlebox{
+                    width:90%;
+
+                    .middleboxtext{
+                        width: 90%
+                    }
+                }
+            }
+            .footer_container {
+                margin: 2% 10%;
+            }
+        }   
+    } 
 }
 }

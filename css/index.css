@@ -175,7 +175,7 @@ body .topcontent {
   border: solid 1px #e35800;
 }
 body .topcontent .topleft {
-  width: 59%;
+  width: 100%;
 }
 body .topcontent .topleft #bannerh2 {
   font-size: 3.5rem;
@@ -238,8 +238,8 @@ body .bottomcontent .bottomleftbox .morebutton {
 body .bottomcontent .bottomleftbox .bottomleftbutton {
   background-color: #e35800;
   border-radius: 0.5rem;
-  padding: 1rem 4rem 1rem 3rem;
-  width: 46%;
+  padding: 1rem 4rem 1rem 2.5rem;
+  width: 50%;
   margin: 0.5rem;
 }
 body .nav_links {
@@ -253,50 +253,59 @@ body .nav_links li {
   cursor: pointer;
 }
 body .nav_links li a:hover {
-  background-color: #f2f2f2;
+  color: #da5310;
   font-size: 1.75rem;
+}
+body .nav_links .middle_link {
+  border-left: black solid thin;
+  border-right: black solid thin;
+  padding: 0 2rem;
 }
 body .footer_container footer {
   display: flex;
   justify-content: space-evenly;
 }
 @media (max-width: 800px) {
-  .body_container {
+  body {
     width: auto;
   }
-  .body_container .header {
+  body .header {
     display: flex;
     height: 18rem;
     padding-bottom: 0;
   }
-  .body_container .header .nav {
+  body .header .nav {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
   }
-  .body_container .header .nav h1 {
+  body .header .nav h1 {
     text-align: center;
   }
-  .body_container .header .nav .nav_links {
+  body .header .nav .nav_links {
     margin: auto;
   }
-  .body_container .header .nav .nav_links .middle_link {
+  body .header .nav .nav_links .middle_link {
     border-left: black solid thin;
     border-right: black solid thin;
     padding: 0 2%;
   }
-  .body_container .topcontent {
+  body .topcontent {
     margin-top: 0;
+    padding: 2.5rem;
   }
-  .body_container .topcontent .topleft {
+  body .topcontent .topleft {
     width: 100%;
   }
-  .body_container .middlecontent {
+  body .middlecontent {
     display: flex;
   }
-  .body_container .middlecontent .middlebox {
-    width: 45%;
+  body .middlecontent .middlebox {
+    width: 100%;
+  }
+  body .bottomcontent .bottomleftbox .bottomleftbutton {
+    width: 80%;
   }
 }
 @media (max-width: 500px) {
@@ -455,8 +464,9 @@ table {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 4.5rem;
-  width: 100%;
+  padding: 1.5rem;
+  width: 85%;
+  margin: 0 auto;
 }
 .middlecontent .middlebox {
   background-color: #ffffff;
@@ -501,7 +511,7 @@ body header nav h1 {
 }
 body .nav_links {
   display: flex;
-  width: 60%;
+  width: 64%;
   justify-content: space-between;
   align-items: center;
 }
@@ -509,26 +519,75 @@ body .nav_links li {
   font-size: 1.5rem;
   cursor: pointer;
 }
+body .nav_links .middle_link {
+  padding: 0 1rem;
+}
 body .footer_container footer {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 500px) {
-  * body .topcontent #bannerh2 {
+@media (max-width: 800px) {
+  .body_container {
+    width: auto;
+  }
+  .body_container .header {
+    display: flex;
+    height: 18rem;
+    padding-bottom: 0;
+  }
+  .body_container .header .nav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .body_container .header .nav h1 {
     text-align: center;
   }
-  * body .topcontent #bannerp {
+  .body_container .header .nav .nav_links {
+    margin: auto;
+    width: 85%;
+  }
+  .body_container .header .nav .nav_links .middle_link {
+    border-left: black solid thin;
+    border-right: black solid thin;
+    padding: 0 1rem;
+  }
+  .body_container .topcontent {
+    margin-top: 0;
+  }
+  .body_container .topcontent .topleft {
+    width: 100%;
+  }
+  .body_container .middlecontent {
+    display: flex;
+  }
+  .body_container .middlecontent .middlebox {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  * body .body_container .header .nav .nav_links {
+    width: 95%;
+  }
+  * body .body_container .topcontent #bannerh2 {
+    text-align: center;
+  }
+  * body .body_container .topcontent #bannerp {
     display: none;
   }
-  * body .middlecontent {
+  * body .body_container .middlecontent {
     display: flex;
     flex-flow: column;
     align-items: center;
   }
-  * body .middlecontent .middlebox {
+  * body .body_container .middlecontent .middlebox {
     width: 90%;
   }
-  * body .middlecontent .middlebox .middleboxtext {
+  * body .body_container .middlecontent .middlebox .middleboxtext {
     width: 90%;
+  }
+  * body .body_container .footer_container {
+    margin: 2% 10%;
   }
 }

@@ -114,7 +114,7 @@ body {
 		border: solid 1px @buttoncolor;
 
 		.topleft{
-			width: 59%;
+			width: 100%;
 
 			#bannerh2{
 				font-size: 3.5rem;
@@ -196,8 +196,8 @@ body {
 			.bottomleftbutton{
 				background-color: @buttoncolor;
 				border-radius: .5rem;
-				padding: 1rem 4rem 1rem 3rem;
-				width: 46%;
+				padding: 1rem 4rem 1rem 2.5rem;
+				width: 50%;
 				margin: .5rem;
 			}
 		}
@@ -213,10 +213,15 @@ body {
 			cursor: pointer;
 			a {
 				&:hover {
-					background-color: darken(white, 5%);
+					color: darken(rgb(227,87,17), 2%);
 					font-size: 1.75rem;
 				}
 			}
+		}
+		.middle_link {
+						border-left: black solid thin;
+						border-right: black solid thin;
+						padding: 0 2rem;
 		}
 	}
 	.footer_container {
@@ -231,7 +236,7 @@ body {
 // Responsive code for tablet view 
 
 @media (max-width: 800px) {
-	.body_container {
+	 body {
 		width: auto;
 		.header {
 			display: flex;
@@ -259,6 +264,7 @@ body {
 		}
 		.topcontent {
 		margin-top: 0;
+		padding: 2.5rem;
 
 			.topleft {
 				width: 100%;
@@ -268,7 +274,16 @@ body {
 			display: flex;
 
 			.middlebox {
-				width: 45%;
+				width: 100%;
+			}
+		}
+		.bottomcontent {
+
+			.bottomleftbox {
+
+				.bottomleftbutton {
+					width: 80%;
+				}
 			}
 		}
 	}
