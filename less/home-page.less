@@ -61,14 +61,15 @@ html, body {
 
 *{
 	font-family: 'Open Sans', sans-serif;
+}
 
 body {
 
-	header {
+	.header {
 		padding: 4.5em 0 3em 0;
 		height: 160px;
 
-		nav {
+		.nav {
 			display: flex;
 			justify-content: space-between;
 			margin: 0 4%;
@@ -209,6 +210,12 @@ body {
 		li {
 			font-size: 1.5rem;
 			cursor: pointer;
+			a {
+				&:hover {
+					background-color: darken(white, 5%);
+					font-size: 1.75rem;
+				}
+			}
 		}
 	}
 	.footer_container {
@@ -219,10 +226,49 @@ body {
     }
 }
 
+
 // Responsive code for tablet view 
 
-// @media (max-width: 800px) {
-// 	.body_container {
-// 		width: auto;
-// 	}
-// }
+@media (max-width: 800px) {
+	.body_container {
+		width: auto;
+		.header {
+			display: flex;
+			height: 18rem;
+			padding-bottom: 0;
+			.nav {
+				display: flex;
+				flex-direction: column;
+				height: auto;
+				width: 100%;
+				
+				h1 {
+					text-align: center;
+				}
+				.nav_links {
+					margin: auto;
+					
+					.middle_link {
+						border-left: black solid thin;
+						border-right: black solid thin;
+						padding: 0 2%;
+					}
+				}
+			}
+		}
+		.topcontent {
+		margin-top: 0;
+
+			.topleft {
+				width: 100%;
+			}
+		}
+		.middlecontent {
+			display: flex;
+
+			.middlebox {
+				width: 45%;
+			}
+		}
+	}
+}
